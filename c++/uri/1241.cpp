@@ -1,3 +1,4 @@
+//TODO: still wrong
 #include <iostream>
 #include <string>
 #include <vector>
@@ -38,7 +39,7 @@ int main()
         {
             cout << "encaixa" << endl;
         }
-        flag =0;
+        flag = 0;
         m--;
     }
 

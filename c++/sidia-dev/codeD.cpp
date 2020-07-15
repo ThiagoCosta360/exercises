@@ -28,13 +28,14 @@ main()
 
         if (aux == "\n")
         {
-            while(){
-                
+            while (1)
+            {
             }
-            cout << total
+            cout << total;
             continue;
         }
-        else if (aux[0] == EOF){
+        else if (aux[0] == EOF)
+        {
 
             break;
         }
@@ -55,9 +56,8 @@ main()
                 break;
             }
         }
-    m--;
+        m--;
     }
 
-
-return 0;
+    return 0;
 }
