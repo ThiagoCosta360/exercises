@@ -1,0 +1,14 @@
+function getMiddle(s) {
+    l = s.length
+    return l % 2 == 0 ? s[(l / 2) - 1] + s[l / 2] : s[Math.floor(l / 2)]
+}
+
+// Coolest way
+function getMiddle(s) {
+    return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
+}
+
+console.log(getMiddle("test"), "es");
+console.log(getMiddle("testing"), "t");
+console.log(getMiddle("middle"), "dd");
+console.log(getMiddle("A"), "A");
