@@ -6,4 +6,6 @@ function disemvowel(str) {
     return str.match(/[^aeiou]/ig).join('')
 }
 
+
+
 console.log(disemvowel("thiago"))
