@@ -11,6 +11,13 @@ function findOutlier(integers) {
     return odd < even ? integers.find((el) => el % 2 != 0) : integers.find((el) => el % 2 == 0)
 }
 
+// JS way
+function findOutlier(int) {
+    var even = int.filter(a => a % 2 == 0);
+    var odd = int.filter(a => a % 2 !== 0);
+    return even.length == 1 ? even[0] : odd[0];
+}
+
 console.log(findOutlier([0, 1, 2]), 1)
 console.log(findOutlier([1, 2, 3]), 2)
 console.log(findOutlier([2, 6, 8, 10, 3]), 3)
